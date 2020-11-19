@@ -18,7 +18,8 @@ app.get('/api',(req,res)=>{
 })
 
 app.use("/api/", require("./router/inicio"))
-
+app.use("/api/", require("./router/favoritos"))
+app.use("/api/", require("./router/historial"))
 
 app.set("puerto", 3000)
 
